@@ -21,6 +21,10 @@ window.onload = function() {
   document.getElementById("namaKamu").innerHTML = NAMA
 };
 
+window.onload = function() {
+  document.getElementById("namaAnda").innerHTML = NAMA
+};
+
 let containerToggleOne = setTimeout(function(){
 	firstSlideContainer.setAttribute("style","display:none");
 	secondSlideContainer.setAttribute("style","display:block");
