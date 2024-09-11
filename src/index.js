@@ -1,5 +1,8 @@
 let NAMA = prompt('masukan nama yang ulangtahun')
 
+window.onload = function delay() {
+  setTimeout(3000);
+};
 let firstSlideContainer = 
 document.getElementsByClassName("slide--content")[0];
 
@@ -22,7 +25,7 @@ document.getElementsByClassName("third--canvas")[0];
 thirdCanvas.setAttribute("style","display:none");
 
 document.addEventListener("DOMContentLoaded", function namaKamu() {
-  document.getElementById("namaKamu").innerHTML = NAMA
+  document.getElementById("namaKamu").innerHTML = "" + NAMA
 });
 
 let containerToggleOne = setTimeout(function(){
