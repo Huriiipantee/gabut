@@ -3,9 +3,9 @@ let NAMA = prompt('masukan nama yang ulangtahun')
 let firstSlideContainer = 
 document.getElementsByClassName("slide--content")[0];
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function nama() {
   document.getElementById("nama").innerHTML = NAMA
-};
+});
 
 let secondSlideContainer = 
 document.getElementsByClassName("slide--content--one")[0];
