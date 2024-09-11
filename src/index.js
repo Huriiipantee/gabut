@@ -15,7 +15,11 @@ document.getElementsByClassName("third--canvas")[0];
 
 thirdCanvas.setAttribute("style","display:none");
 
+ let NAMA = prompt('masukan nama')
 
+window.onload = function() {
+  document.getElementById("namaKamu").innerHTML = NAMA
+};
 
 let containerToggleOne = setTimeout(function(){
 	firstSlideContainer.setAttribute("style","display:none");
