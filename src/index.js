@@ -15,7 +15,7 @@ document.getElementsByClassName("third--canvas")[0];
 
 thirdCanvas.setAttribute("style","display:none");
 
- let NAMA = prompt('masukan nama')
+ let NAMA = prompt('masukan nama yang ulangtahun')
 
 window.onload = function() {
   document.getElementById("namaKamu").innerHTML = NAMA
