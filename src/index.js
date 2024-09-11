@@ -3,10 +3,9 @@ let NAMA = prompt('masukan nama yang ulangtahun')
 let firstSlideContainer = 
 document.getElementsByClassName("slide--content")[0];
 
-function ubahTeks() {
-  var inputText = document.getElementById("namaAnda").value;
-  document.getElementById("demo").innerHTML = NAMA ;
-}
+window.onload = function() {
+  document.getElementById("nama").innerHTML = NAMA
+};
 
 let secondSlideContainer = 
 document.getElementsByClassName("slide--content--one")[0];
@@ -22,9 +21,9 @@ document.getElementsByClassName("third--canvas")[0];
 
 thirdCanvas.setAttribute("style","display:none");
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function namaKamu() {
   document.getElementById("namaKamu").innerHTML = NAMA
-};
+});
 
 let containerToggleOne = setTimeout(function(){
 	firstSlideContainer.setAttribute("style","display:none");
