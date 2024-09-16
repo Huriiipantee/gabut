@@ -44,3 +44,22 @@ let removeSecondCanvas = setTimeout(function(){
 	secondCanvas.setAttribute("style","display:none");
 	thirdCanvas.setAttribute("style","display:block")
 },9800)
+
+// auto-landscape.js
+
+function updateOrientation() {
+    const isLandscape = window.innerWidth > window.innerHeight;
+    if (isLandscape) {
+        document.body.classList.add('landscape');
+        document.body.classList.remove('portrait');
+    } else {
+        document.body.classList.add('portrait');
+        document.body.classList.remove('landscape');
+    }
+}
+
+// Initial check
+updateOrientation();
+
+// Listen for orientation changes
+window.addEventListener('resize', updateOrientation);
