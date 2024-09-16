@@ -39,6 +39,31 @@ let removeFirstSlide = setTimeout(function(){
 	secondCanvas.setAttribute("style","display:block");
 },6500);
 
+// auto-scale.js
+
+function autoScale() {
+    const element = document.getElementById('scalable-element');
+    const container = document.getElementById('container');
+
+    // Calculate new dimensions
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+
+    // Example: Scale the element to cover 75% of the container's width and height
+    const scaleWidth = containerWidth * 0.75;
+    const scaleHeight = containerHeight * 0.75;
+
+    // Apply scaling using transform
+    element.style.transform = `scale(${Math.min(scaleWidth / element.offsetWidth, scaleHeight / element.offsetHeight)})`;
+}
+
+// Call autoScale on window resize
+window.addEventListener('resize', autoScale);
+
+// Initial scale
+autoScale();
+
+
 let removeSecondCanvas = setTimeout(function(){
 	secondCanvas.setAttribute("style","display:none");
 	thirdCanvas.setAttribute("style","display:block")
