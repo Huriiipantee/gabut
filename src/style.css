@@ -738,6 +738,9 @@ html {
     left: 45%;
     bottom: 2em;
     animation-delay: 4800ms;
+    height: auto;
+    width: 100px;
+    display: flex;
   }
   
   .third--canvas > img#gf3 {
