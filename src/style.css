@@ -732,6 +732,8 @@ html {
   
   .third--canvas > img#gf1 {
     left: 35%;
+    height:10px
+    width:10px
   }
   
   .third--canvas > img#gf2 {
@@ -753,6 +755,8 @@ html {
       transform: scale(1);
     }
   }
+
+.
   
   @keyframes thirdCanvasLastText {
     from {
