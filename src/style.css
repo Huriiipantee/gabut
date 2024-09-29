@@ -738,7 +738,7 @@ html {
     left: 45%;
     bottom: 2em;
     animation-delay: 4800ms;
-    height: auto;
+    height: 80px;
     width: 100px;
     display: flex;
   }
