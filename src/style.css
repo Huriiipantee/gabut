@@ -732,26 +732,16 @@ html {
   
   .third--canvas > img#gf1 {
     left: 35%;
-    height: auto;
-    width: 60px;
-    display: flex;
   }
   
   .third--canvas > img#gf2 {
     left: 45%;
     bottom: 2em;
     animation-delay: 4800ms;
-    height: auto;
-    width: 60px;
-    display: flex;
   }
   
   .third--canvas > img#gf3 {
     left: 55%;
-    animation-delay: 5300ms;
-    height: auto;
-    width: 60px;
-    display: flex;
   }
   
   @keyframes giftIcon {
